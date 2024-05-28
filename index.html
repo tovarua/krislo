@@ -409,10 +409,11 @@ src="https://www.facebook.com/tr?id=477173434747002&ev=PageView&noscript=1"
 						// Отримуємо значення полів форми
 						var name = document.querySelector('input[name="name"]').value;
 						var phone = document.querySelector('input[name="phone"]').value;
+						var city = document.querySelector('input[name="city"]').value;
+					 var post = document.querySelector('input[name="post"]').value;
 						
-					 
 						// Формуємо повідомлення
-						var message = `Нове замовлення:\nІм'я: ${name}\nТелефон: ${phone};`
+						var message = `Нове замовлення:\nІм'я: ${name}\nТелефон: ${phone} \nМісто: ${city}\nПошта: ${post};`
 					 
 						// Ваш токен та ID чату
 						var token = '7060678048:AAGGzFBoMqmxney_Q45P5UeoYJfwnhRYxA0';
@@ -449,6 +450,8 @@ src="https://www.facebook.com/tr?id=477173434747002&ev=PageView&noscript=1"
 			<form id="order_form" class="order_form_custom" action="./качеля_files/thank_you_page.html" method="post">
 				<input class="field" type="text" name="name" placeholder="Введіть ваше ім&#39;я" required="">
 				<input class="field" type="tel" name="phone" placeholder="Введіть Ваш телефон" required="">
+				<input class="field" type="text" name="city" placeholder="Введіть ваше місто(село)" required="">
+				<input class="field" type="text" name="post" placeholder="Номер нової пошти" required="">
 				<button class="button">Замовити зі знижкою</button>
 			</form>
 		</section>
